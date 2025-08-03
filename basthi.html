@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGO Website</title>
+  <style>
+    /* Base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2b6777;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #c8d8e4;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2b6777;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #2b6777;
+      margin-bottom: 1rem;
+    }
+
+    /* Volunteer Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #2b6777;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1e4c5a;
+    }
+
+    footer {
+      background: #2b6777;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Helping Hands NGO</h1>
+    <p>Making a difference, one life at a time.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#volunteer">Volunteer</a>
+  </nav>
+
+  <section class="section" id="home">
+    <h2>Welcome to Helping Hands</h2>
+    <p>We are a non-profit organization dedicated to uplifting underprivileged communities through education, healthcare, and sustainable development projects.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Founded in 2010, Helping Hands NGO has been working tirelessly to bring positive change in rural and urban slum areas. Our team of passionate volunteers, healthcare workers, and educators ensure that every initiative reaches those who need it most.</p>
+  </section>
+
+  <section class="section" id="volunteer">
+    <h2>Volunteer With Us</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="4" placeholder="Why do you want to volunteer?" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Helping Hands NGO. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
